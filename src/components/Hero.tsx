@@ -10,7 +10,7 @@ function Hero() {
 			</p>
 			<div className="flex justify-center items-center">
 				<button className="w-36 h-12 text-center bg-brand-yellow text-montserrat font-bold text-white mt-5 hover:opacity-50">
-					<a href="https://forms.gle/ZjTGKfpjmxZYFjwq8" target="_blank">Join Waitlist</a>
+					<a href="https://forms.gle/ZjTGKfpjmxZYFjwq8" target="_blank" rel="noreferrer">Join Waitlist</a>
 				</button>
 				<button className="w-36 h-12 text-center bg-transparent border-2 text-montserrat font-bold text-white ml-5 mt-5 hover:opacity-50">
 					Play Video

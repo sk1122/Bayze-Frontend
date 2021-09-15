@@ -9,7 +9,7 @@ function Navbar() {
 			<div className="h-4 w-96 text-xs flex justify-around items-center text-montserrat">
 				<div>About</div>
 				<div>Products</div>
-				<div><a href="https://bayze.hashnode.dev/" target="_blank">Blog</a></div>
+				<div><a href="https://bayze.hashnode.dev/" target="_blank" rel="noreferrer">Blog</a></div>
 				<div>Contact Us</div>
 			</div>
 		</div>
