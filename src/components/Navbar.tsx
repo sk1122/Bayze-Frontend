@@ -1,16 +1,38 @@
+import { useRef } from "react"
 import logo from "../Logo.png"
 
 function Navbar() {
+	let menu = useRef<HTMLElement>(null)
+	
+	const openMenu = () => {
+		let menuNode = menu.current!
+		if(menuNode.classList.contains("hidden")) menuNode.classList.remove("hidden")
+		else menuNode.classList.add("hidden")
+	}
+
 	return (
-		<div className="h-24 w-full text-white flex justify-between items-center">
-			<div className="w-64">
+		<div className="absolute md:static h-24 w-full text-white flex justify-between items-center">
+			<div className="w-64 mt-3 md:mt-0 left-0 absolute md:static md:w-64">
 				<img src={logo} alt="" />
 			</div>
-			<div className="h-4 w-96 text-xs flex justify-around items-center text-montserrat">
+			<div className="h-4 w-96 hidden text-xs md:flex justify-around items-center text-montserrat">
 				<div>About</div>
 				<div>Products</div>
 				<div><a href="https://bayze.hashnode.dev/" target="_blank" rel="noreferrer">Blog</a></div>
 				<div>Contact Us</div>
+			</div>
+			<div className="md:hidden">
+				<button className="md:hidden absolute right-16" type="button" onClick={openMenu}>
+					<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+			<div className="hidden text-xs md:hidden justify-around items-center text-montserrat bg-brand-400 p-4 rounded-lg absolute top-24 right-10" ref={menu as React.RefObject<HTMLDivElement>}>
+				<div className="px-2 py-4">About</div>
+				<div className="px-2 py-4">Products</div>
+				<div className="px-2 py-4"><a href="https://bayze.hashnode.dev/" target="_blank" rel="noreferrer">Blog</a></div>
+				<div className="px-2 py-4">Contact Us</div>
 			</div>
 		</div>
 	)
