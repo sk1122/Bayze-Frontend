@@ -11,6 +11,7 @@ function App() {
 	const [docTitle, setDocTitle] = useState('Bayze - A Smart Way to Manage your Ad Accounts')
 
 	useEffect(() => {
+		setDocTitle('Bayze - A Smart Way to Manage your Ad Accounts')
 		document.title = docTitle
 	}, [docTitle])
 
