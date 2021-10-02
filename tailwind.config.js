@@ -68,6 +68,7 @@ module.exports = {
       72: '18rem',
       80: '20rem',
       96: '24rem',
+      100: '30rem',
     },
     animation: {
       none: 'none',
@@ -432,6 +433,7 @@ module.exports = {
       '3/6': '50%',
       '4/6': '66.666667%',
       '5/6': '83.333333%',
+      '30': '30rem',
       full: '100%',
       screen: '100vh',
     }),

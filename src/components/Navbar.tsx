@@ -11,7 +11,7 @@ function Navbar() {
 	}
 
 	return (
-		<div className="absolute md:static h-24 w-full text-white flex justify-between items-center">
+		<div className="absolute md:static h-24 w-full  flex justify-between items-center">
 			<div className="w-64 mt-3 md:mt-0 left-0 absolute md:static md:w-64">
 				<img src={logo} alt="" />
 			</div>
@@ -28,7 +28,7 @@ function Navbar() {
 					</svg>
 				</button>
 			</div>
-			<div className="hidden text-xs md:hidden justify-around items-center text-montserrat bg-brand-400 p-4 rounded-lg absolute top-24 right-10" ref={menu as React.RefObject<HTMLDivElement>}>
+			<div className="hidden text-xs md:hidden justify-around items-center text-white text-montserrat bg-brand-400 p-4 rounded-lg absolute top-24 right-10" ref={menu as React.RefObject<HTMLDivElement>}>
 				<div className="px-2 py-4">About</div>
 				<div className="px-2 py-4">Products</div>
 				<div className="px-2 py-4"><a href="https://bayze.hashnode.dev/" target="_blank" rel="noreferrer">Blog</a></div>
