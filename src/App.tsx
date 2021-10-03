@@ -16,7 +16,7 @@ function App() {
 	}, [docTitle])
 
 	return (
-		<div className="h-full h-screen w-full" style={{ backgroundColor: "#BEE1FF" }}>
+		<div className="h-full h-screen w-full bg-brand-blue">
 			<div className="h-screen w-full">
 				<Navbar></Navbar>
 				<Hero></Hero>

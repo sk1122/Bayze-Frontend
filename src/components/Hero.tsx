@@ -1,12 +1,17 @@
 import monitor from "../images/Monitor Right.png"
 import pie from "../images/Pie Right.png"
 import rocket from "../images/Rocket Left.png"
+
+// Bayze is the complete solution for managing ad accounts on any type of online advertising platform. From campaign performance tracking to campaign automation. What makes this product special is the power it gives you to manage, track multiple ad accounts and receive recommendation about campaigns. Bayze does not stop there! Bayze offers many features that are not offered in other products to save time for yourself, the business owner.
+// Bayze is an all-in-one solution for your Ad accounts. It supports every important aspect of ad management like automation, reporting, campaign tracking and many more. This easy to use cloud based solution lets you scale your business to new peaks.
+// Bayze is a revolutionary way to manage all of your AdWords accounts, easy to use, fast, and very efficient.
+
 function Hero() {
 	return (
 		<div className="h-screen px-10 md:px-20 md:pt-20 flex justify-center md:justify-start items-start flex-col">
 			<h1 className="lg:text-5xl md:text-3xl text-2xl  text-montserrat font-bold leading-tight">A Better Way <br/>To Manage Your Ad Account</h1>
-			<p className="mt-5 w-72 md:w-3/4 text-montserrat font-normal lg:text-sm md:text-xs text-xs">
-				We will help you optimize your Ad Budget and help you reach more and more Users.
+			<p className="mt-4 w-96 md:w-3/5 z-50 text-montserrat font-normal lg:text-sm md:text-xs text-xs">
+			Bayze is an all-in-one solution for your Ad accounts. It supports every important aspect of ad management like automation, reporting, campaign tracking and many more. This easy to use cloud based solution lets you scale your business to new peaks.
 			</p>
 			<div className="flex justify-center items-center">
 				<button className="w-36 h-12 text-center bg-brand-400 text-white text-montserrat font-bold  mt-5 hover:opacity-50">

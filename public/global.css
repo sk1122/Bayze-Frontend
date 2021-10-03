@@ -1,8 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
 .text-montserrat {
 	font-family: "Montserrat";
+}
+
+.text-inter {
+	font-family: "Inter";
+}
+
+.bg-brand-orange {
+	background-color: #FFEFE1;
+}
+
+.text-brand-orange {
+	color: #FFEFE1;
+}
+
+.bg-brand-blue {
+	background-color: #BEE1FF;
+}
+
+.text-brand-blue {
+	color: #BEE1FF;
 }
 
 .h-100 {
