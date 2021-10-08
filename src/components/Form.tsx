@@ -35,10 +35,10 @@ export default function Form() {
 		}
 		setFormError(JSON.stringify(process.env))
 
-		fetch(process.env.DB_URL as string, {
+		fetch(process.env.REACT_APP_DB_URL as string, {
 			method: 'POST',
 			headers: {
-				web: process.env.CHECK_REQ as string
+				web: process.env.REACT_APP_CHECK_REQ as string
 			},
 			body: JSON.stringify({
 				full_name: full_name,
