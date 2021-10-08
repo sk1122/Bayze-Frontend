@@ -11,11 +11,11 @@ function Navbar() {
 	}
 
 	return (
-		<div className="absolute md:static h-24 w-full  flex justify-between items-center">
-			<div className="w-64 mt-3 md:mt-0 left-0 absolute md:static md:w-64">
+		<div className="md:static h-24 w-full flex justify-between items-center">
+			<div className="w-36 mt-3 md:mt-0 left-0 absolute md:static ml-3 md:ml-5 md:w-36">
 				<img src={logo} alt="" />
 			</div>
-			<div className="h-4 w-96 hidden text-xs md:flex justify-around items-center text-montserrat">
+			<div className="h-4 w-96 hidden text-xs mr-4 md:flex justify-around items-center text-montserrat">
 				<div>About</div>
 				<div>Products</div>
 				<div><a href="https://bayze.hashnode.dev/" target="_blank" rel="noreferrer">Blog</a></div>

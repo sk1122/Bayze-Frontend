@@ -6,6 +6,8 @@ import Features from "./components/Features";
 import Problem from "./components/Problem";
 import Explanation from "./components/Explanation";
 import Founders from "./components/Founders";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 function App() {
 	const [docTitle, setDocTitle] = useState('Bayze - A Smart Way to Manage your Ad Accounts')
@@ -16,8 +18,8 @@ function App() {
 	}, [docTitle])
 
 	return (
-		<div className="h-full h-screen w-full bg-brand-blue">
-			<div className="h-screen w-full">
+		<div className="h-auto w-full bg-brand-blue">
+			<div className="h-auto md:h-screen w-full">
 				<Navbar></Navbar>
 				<Hero></Hero>
 			</div>
@@ -25,6 +27,8 @@ function App() {
 			<Problem></Problem>
 			<Explanation></Explanation>
 			<Founders></Founders>
+			<CTA></CTA>
+			<Footer></Footer>
 		</div>
 	);
 }

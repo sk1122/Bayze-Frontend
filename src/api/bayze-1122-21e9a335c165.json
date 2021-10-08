@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bayze-1122",
+  "private_key_id": "21e9a335c16581c534a5644d16aed972a27d6996",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDd7eZPPv3Ed8XM\n8LGTFc4xQby37zZq2B9JUJUSpSjzKRUeQZEOdE9GhauD8pQ3lEXMwx1OR8Grrzvl\n6rPtPwI4F/20Acr95GN/UuhFvLJC3D3IJqCGlpIDuuwcZWomYkSZOtyetkIeVO7G\nh/WFBHXCRC01e89eqHL8v3LxkKty4mjKSwxgtjXDnRogMwjzrWg3Zg22SwIchmgN\noLO3DmKGHalxHYe56sgpS3RIdOG2ojNnvDTCcO+UKeA7gqHFHzmjch7QA7ZqprIa\n7qheD3vTd/WLXnH3k/w2sNgxlhgWnSHMmmvf4tPSOuRV7sD2lWc66VZVws5428T7\n2xm+WRNrAgMBAAECggEAC+6D8OPGmf8Eg/G24l0MQmqx3kO+rbzj5bmu4hs+GeCu\nEXvd9CR9tKFwKL5siJZwsEMXOsOx3myj8EcPmGRIVsK3caudAcx7KvfGpCUyglS7\n/5xQChxjSk8M7bPoIpsq7AAVp3TOFjpjwgnCQf4M5L5sndEDw6eT0xHp+KHaDemT\nrl27Efp2iVz9DUt2cWkuajb8hctIbcgOVix/IpfCxzOQyIeGccTghR415jIFvytM\n1bOeKAWb1kD21UhGWCQanw5+HmCmqLFZY8DnU1Tte7hKLYkXhNDe6OG7FSnj7+Eq\nneF7dEJinVtCvQGpuEeCNC17Kz/ZB/anFet1NjL4xQKBgQDvEYkIdOxuHPibROTA\naZ6aGciew0lCZYbL9D4JB8t05n4Qguf4o5LtcVoLz6zCM45JECVJFn34NH/iOXl9\nD3kzTx3a5lvb8j0I+X5J/rMWJCTSi7Wsza1Ql5h3aipc+i4oFxKNhlACohBLWfZD\n0VK3PNtERX/5Usm1mE8Xu/nkxQKBgQDtpZ6jDoPP36N8CfMC6Jv8jL99yW0LTsaj\nv2DBWLNVva15wS1QgoocU42mx8Nw6HboWBCzY+RyD8tVpflU7Btz2F8UAZNvR3qe\nn9+rn8BPsiy+9yOW7OpJaOuyoe7LE1gW4G0kvC2U3e4RrmHbyG1WUpNeCz8kpaOx\njLPsF6V6bwKBgG8ForDFs+KzG5Tn2p+srRX9cVihck0eXwoqZADHmOmx/MtoL5gd\nRqd0I5AmoqERVjuB/v7BLkDtCJKjhFLas7trO38jyXcMOOIJE2gDm2Fl6Z/Jd9ZH\nMfyiWhDiwcep+3Nsu5Xz0QZYAt8raR03gYVNArri17qOgtQNZnWsOzHNAoGBAKMA\nrsb49cBnjSNPT7f3BMc9YztMJddTuTwn0J3N0XRGHe8daY+HemPji42SB6QyTx0f\nCpWBNvhljPq6VULCkDHtf4mhaxcw2BJlZm25rZb8h2SU73xeFHU12jU0jS4NnqZS\nWYqQ6FLrxpeqHMU7vIMxMJOY8z6XvqfR8rdFoONRAoGBAK6iulgGUJj3m0PLGvBf\nBD5Q3uT3i/mo/ygiTfmbCsNxsjhujB7MFY9+cRGdZhp5s1hJGR/K7FbucD6YyT8V\n0zo5ysvk4qKj1K3H4RxQud+sQOtaH3J8a6jdzODRvL8QphVNWoKvnBhjq8Us3V3Y\nLex9R93nWPpAYYMI1ddonpkP\n-----END PRIVATE KEY-----\n",
+  "client_email": "bayze-landing@bayze-1122.iam.gserviceaccount.com",
+  "client_id": "110910091546922126576",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bayze-landing%40bayze-1122.iam.gserviceaccount.com"
+}
