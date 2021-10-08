@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { db } from "../api/db"
 
 export default function Form() {
 	
@@ -35,19 +36,7 @@ export default function Form() {
 		}
 		setFormError(JSON.stringify(process.env))
 
-		fetch(process.env.REACT_APP_DB_URL as string, {
-			method: 'POST',
-			headers: {
-				web: process.env.REACT_APP_CHECK_REQ as string
-			},
-			body: JSON.stringify({
-				full_name: full_name,
-				email: email,
-				company: company_name
-			})
-		})
-		.then(res => res.json())
-		.then(data => console.log(data))
+		await db(full_name, email, company_name)
 	}
 	
 	return (

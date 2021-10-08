@@ -1,21 +1,13 @@
 import { GoogleSpreadsheet } from "google-spreadsheet"
 import { VercelRequest, VercelResponse } from '@vercel/node';
 
-export default async (request: VercelRequest, response: VercelResponse)  => {
-	if('web' in request.headers) {
-		if(request.headers['web'] !== process.env.REACT_APP_CHECK_REQ) {
-			response.status(401).send('Not Authenticated')
-			return
-		}
-	}
-	
-	const { full_name, email, company } = request.body
+export const db = async (full_name, email, company)  => {
 	
 	const doc = new GoogleSpreadsheet('1m_u10KlSACYtQJw0NuKUGqB436nGrBLvmivWArzyEYo')
 	
 	await doc.useServiceAccountAuth({
-		client_email: process.env.REACT_APP_CLIENT_EMAIL as string,
-		private_key: process.env.REACT_APP_PRIVATE_KEY as string,
+		client_email: process.env.REACT_APP_CLIENT_EMAIL,
+		private_key: process.env.REACT_APP_PRIVATE_KEY,
 	})
 
 
@@ -26,6 +18,4 @@ export default async (request: VercelRequest, response: VercelResponse)  => {
 	const sheet = await doc.sheetsByIndex[1]
 	
 	sheet.addRow({ full_name: full_name, email: email, company: company })
-
-	response.status(200).send("Executed")
 }
