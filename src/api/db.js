@@ -11,7 +11,6 @@ export const db = async (full_name, email, company)  => {
 
 
 	await doc.loadInfo();
-	console.log(doc.title)
 	await doc.updateProperties({ title: 'Waitlist Form' })
 
 	const sheet = await doc.sheetsByIndex[1]

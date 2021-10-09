@@ -34,7 +34,6 @@ export default function Form() {
 			setFormError(error_text)
 			return
 		}
-		setFormError(JSON.stringify(process.env))
 
 		await db(full_name, email, company_name)
 	}
