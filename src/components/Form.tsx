@@ -87,7 +87,7 @@ export default function Form() {
 				<div className="w-60 text-inter text-red-500 font-bold mb-3">{form_error}</div>
 				<div className="flex items-center justify-between">
 					<button
-						className="bg-brand-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
+						className="btn bg-brand-400 text-white font-bold py-2 px-4 rounded"
 						type="button"
 						onClick={() => addToWaitlist(full_name, email, company_name)}
 					>

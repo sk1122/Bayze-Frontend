@@ -1,6 +1,6 @@
 function Features() {
 	return (
-		<div className="h-auto w-full flex flex-col justify-start items-center bg-brand-orange">
+		<div id="features" className="h-auto w-full flex flex-col justify-start items-center bg-brand-orange">
 			<div className="h-1/4 mt-12 w-full flex flex-col justify-center md:justify-end text-center md:items-center">
 				<h2 className="text-sm md:text-lg text-inter font-semibold text-brand-400">Manage Campaigns Effeciently</h2>
 				<h1 className="text-2xl md:text-3xl text-inter font-extrabold md:w-1/2">Everything you need to manage all of your Ad Campaigns</h1>

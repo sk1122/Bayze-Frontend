@@ -31,8 +31,22 @@
 	height: 30rem;
 }
 
+.h-hero {
+	height: calc(100vh - 6rem)
+}
+
+.btn:hover {
+	color: #d9e2ff;
+	transform: translateY(-1px);
+	box-shadow: 0 20px 24px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+  
+
 @media only screen and (max-width: 640px) {
 	.h-100 {
 	  height: 15rem;
+	}
+	.h-hero {
+		height: auto
 	}
   }

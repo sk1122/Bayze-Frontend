@@ -1,5 +1,4 @@
 import { GoogleSpreadsheet } from "google-spreadsheet"
-import { VercelRequest, VercelResponse } from '@vercel/node';
 
 export const db = async (full_name, email, company)  => {
 	
