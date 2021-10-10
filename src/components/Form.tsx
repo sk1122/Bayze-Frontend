@@ -7,6 +7,7 @@ export default function Form() {
 	const [email, setEmail] = useState('')
 	const [company_name, setCompanyName] = useState('')
 	const [form_error, setFormError] = useState('')
+	const [form_success, setFormSuccess] = useState('')
 
 	const validEmailRegex = RegExp(
 		// eslint-disable-next-line
@@ -14,6 +15,8 @@ export default function Form() {
 	);
 
 	const addToWaitlist = async (full_name: string, email: string, company_name: string) => {
+		setFormError('')
+		setFormSuccess('')
 		let error_text = ''
 		if(!full_name) {
 			if (error_text === '') error_text = 'Please Enter '
@@ -36,6 +39,7 @@ export default function Form() {
 		}
 
 		await db(full_name, email, company_name)
+		setFormSuccess(`${full_name} added successfully!`)
 	}
 	
 	return (
@@ -84,6 +88,7 @@ export default function Form() {
 					/>
 				</div>
 				<div className="w-60 text-inter text-red-500 font-bold mb-3">{form_error}</div>
+				<div className="w-60 text-inter text-green-500 font-bold mb-3">{form_success}</div>
 				<div className="flex items-center justify-between">
 					<button
 						className="btn bg-brand-400 text-white font-bold py-2 px-4 rounded"
