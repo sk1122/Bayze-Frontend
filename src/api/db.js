@@ -13,7 +13,7 @@ export const db = async (full_name, email, company)  => {
 	await doc.loadInfo();
 	await doc.updateProperties({ title: 'Waitlist Form' })
 
-	const sheet = await doc.sheetsByIndex[1]
+	const sheet = await doc.sheetsByIndex[0]
 	
 	sheet.addRow({ full_name: full_name, email: email, company: company })
 }
