@@ -9,7 +9,8 @@ import Founders from "./components/Founders";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
-import {  animateScroll as scroll } from "react-scroll"
+
+import { animateScroll as scroll } from "react-scroll"
 
 function App() {
 	const [docTitle, setDocTitle] = useState('Bayze - A Smart Way to Manage your Ad Accounts')

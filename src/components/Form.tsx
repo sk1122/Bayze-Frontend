@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { db } from "../api/db"
 
+import ReactGA from "react-ga"
+
 export default function Form() {
 	
 	const [full_name, setFullName] = useState('')
@@ -14,9 +16,17 @@ export default function Form() {
 		/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()/\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 	);
 
+	const sendStatus = () => {
+		ReactGA.event({
+			category: "Join Waitlist",
+			action: "User pressed the Join Waitlist button",
+		});	 
+	}
+
 	const addToWaitlist = async (full_name: string, email: string, company_name: string) => {
+		sendStatus()
 		setFormError('')
-		setFormSuccess('')
+		setFormSuccess('Sending...')
 		let error_text = ''
 		if(!full_name) {
 			if (error_text === '') error_text = 'Please Enter '
@@ -34,11 +44,13 @@ export default function Form() {
 		}
 		console.log(error_text)
 		if (error_text !== '') {
+			setFormSuccess('')
 			setFormError(error_text)
 			return
 		}
-
+		
 		await db(full_name, email, company_name)
+		setFormSuccess('')
 		setFormSuccess(`${full_name} added successfully!`)
 	}
 	
