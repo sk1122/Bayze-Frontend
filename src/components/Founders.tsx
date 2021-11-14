@@ -17,7 +17,7 @@ export default function Founders() {
 				<div className="flex flex-col justify-start items-center text-center w-72 h-48">
 					<img src={avatar} alt="" className="p-1 h-24 w-24 rounded-full" />
 					<div className="text-lg font-semibold text-inter mt-5">Prajwal Marennavar</div>
-					<div className="text-sm font-normal text-inter mt-3">Time is Money and We are here to save time of you!</div>
+					<div className="text-sm font-normal text-inter mt-3">Time is Money and We are here to save time for you!</div>
 				</div>
 			</div>
 		</div>
